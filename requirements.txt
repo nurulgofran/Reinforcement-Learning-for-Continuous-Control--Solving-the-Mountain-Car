@@ -1,7 +1,7 @@
 # requirements.txt
 gym==0.26.2
-numpy>=1.23.0
-matplotlib>=3.5.0
+numpy==1.23.0
+matplotlib==3.5.3
 pyglet==1.5.27
 PyOpenGL==3.1.6
 PyOpenGL-accelerate==3.1.6
