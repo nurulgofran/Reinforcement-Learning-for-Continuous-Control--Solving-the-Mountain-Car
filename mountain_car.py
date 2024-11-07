@@ -3,8 +3,8 @@ import gym
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Initialize environment
-env = gym.make('MountainCar-v0')
+# Initialize environment with rendering
+env = gym.make('MountainCar-v0', render_mode="human")
 
 # Hyperparameters
 LEARNING_RATE = 0.1
@@ -43,6 +43,9 @@ def main():
             # Take action in environment - handle 5 return values
             new_state, reward, terminated, truncated, _ = env.step(action)
             done = terminated or truncated  # Combine both flags
+            
+            # Add visualization
+            env.render()
             
             episode_reward += reward
             new_discrete_state = get_discrete_state(new_state)
