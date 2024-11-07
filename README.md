@@ -34,3 +34,29 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+
+## Usage
+```bash
+# Run training
+python mountain_car.py
+
+.
+├── [mountain_car.py](http://_vscodecontentref_/1)     # Main implementation
+├── [requirements.txt](http://_vscodecontentref_/2)    # Dependencies
+├── LICENSE            # MIT license
+└── [README.md](http://_vscodecontentref_/3)         # Documentation
+
+
+
+Implementation Details
+State space discretization for Q-learning
+Epsilon-greedy exploration strategy
+Real-time reward tracking
+Learning progress visualization
+Contributing
+Fork repository
+Create feature branch (git checkout -b feature/NewFeature)
+Commit changes (git commit -m 'Add NewFeature')
+Push to branch (git push origin feature/NewFeature)
+Submit Pull Request
